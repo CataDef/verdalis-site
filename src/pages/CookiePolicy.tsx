@@ -126,7 +126,7 @@ export default function CookiePolicy() {
               <strong>Verdalis Ltd</strong><br />
               Dept 2, 43 Owston Road, Carcroft, Doncaster DN6 8DA, England<br />
               Phone: <a href="tel:+40754900900" className="text-[hsl(152,35%,40%)] hover:underline">+40 754 900 900</a><br />
-              Email: <a href="mailto:office@verdalis.eu" className="text-[hsl(152,35%,40%)] hover:underline">office@verdalis.eu</a>
+              Email: <a href="mailto:contact@verdalis.uk" className="text-[hsl(152,35%,40%)] hover:underline">contact@verdalis.uk</a>
             </p>
           </section>
         </div>

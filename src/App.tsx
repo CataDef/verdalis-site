@@ -33,9 +33,6 @@ import {
   Clock,
   Star,
   Send,
-  Linkedin,
-  Facebook,
-  Twitter,
 } from "lucide-react";
 
 const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy"));
@@ -708,6 +705,11 @@ function Contact() {
               <div className="space-y-6">
                 {[
                   {
+                    icon: Users,
+                    label: "General Consultant",
+                    value: "Razvan Alecu",
+                  },
+                  {
                     icon: MapPin,
                     label: "Address",
                     value: "Dept 2, 43 Owston Road, Carcroft, Doncaster DN6 8DA",
@@ -721,8 +723,8 @@ function Contact() {
                   {
                     icon: Mail,
                     label: "Email",
-                    value: "office@verdalis.eu",
-                    href: "mailto:office@verdalis.eu",
+                    value: "contact@verdalis.uk",
+                    href: "mailto:contact@verdalis.uk",
                   },
                   {
                     icon: Clock,
@@ -922,30 +924,22 @@ function Footer() {
                 Verdalis
               </span>
             </div>
-            <p className="text-sm leading-relaxed mb-4" style={{ fontFamily: "'DM Sans', sans-serif" }}>
+            <p className="text-sm leading-relaxed mb-2" style={{ fontFamily: "'DM Sans', sans-serif" }}>
               Expert environmental consulting for businesses committed to
               sustainability and regulatory excellence.
+            </p>
+            <p className="text-xs text-[hsl(215,15%,60%)] mb-4" style={{ fontFamily: "'DM Sans', sans-serif" }}>
+              General Consultant: <span className="text-white/80">Razvan Alecu</span>
             </p>
             <div className="space-y-2 mb-6 text-sm" style={{ fontFamily: "'DM Sans', sans-serif" }}>
               <a href="tel:+40754900900" className="flex items-center gap-2 hover:text-white transition-colors">
                 <Phone className="w-4 h-4" />
                 +40 754 900 900
               </a>
-              <a href="mailto:office@verdalis.eu" className="flex items-center gap-2 hover:text-white transition-colors">
+              <a href="mailto:contact@verdalis.uk" className="flex items-center gap-2 hover:text-white transition-colors">
                 <Mail className="w-4 h-4" />
-                office@verdalis.eu
+                contact@verdalis.uk
               </a>
-            </div>
-            <div className="flex gap-3">
-              {[Linkedin, Facebook, Twitter].map((Icon, i) => (
-                <a
-                  key={i}
-                  href="#"
-                  className="w-9 h-9 rounded-md bg-white/5 flex items-center justify-center hover:bg-white/10 transition-colors"
-                >
-                  <Icon className="w-4 h-4" />
-                </a>
-              ))}
             </div>
           </div>
 

@@ -41,7 +41,7 @@ export default function PrivacyPolicy() {
               Company No: 04542138<br />
               Managing Director: Razvan Alecu<br />
               Phone: <a href="tel:+40754900900" className="text-[hsl(152,35%,40%)] hover:underline">+40 754 900 900</a><br />
-              Email: <a href="mailto:office@verdalis.eu" className="text-[hsl(152,35%,40%)] hover:underline">office@verdalis.eu</a>
+              Email: <a href="mailto:contact@verdalis.uk" className="text-[hsl(152,35%,40%)] hover:underline">contact@verdalis.uk</a>
             </p>
           </section>
 
@@ -100,7 +100,7 @@ export default function PrivacyPolicy() {
               <li><strong>Right to withdraw consent</strong> — at any time, without affecting the lawfulness of prior processing.</li>
             </ul>
             <p className="text-[hsl(215,10%,42%)] leading-relaxed mt-3">
-              To exercise any of these rights, please contact us at <a href="mailto:office@verdalis.eu" className="text-[hsl(152,35%,40%)] hover:underline">office@verdalis.eu</a> or call <a href="tel:+40754900900" className="text-[hsl(152,35%,40%)] hover:underline">+40 754 900 900</a>.
+              To exercise any of these rights, please contact us at <a href="mailto:contact@verdalis.uk" className="text-[hsl(152,35%,40%)] hover:underline">contact@verdalis.uk</a> or call <a href="tel:+40754900900" className="text-[hsl(152,35%,40%)] hover:underline">+40 754 900 900</a>.
             </p>
           </section>
 
