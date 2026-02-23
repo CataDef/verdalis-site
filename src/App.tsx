@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, lazy, Suspense } from "react";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -37,6 +37,11 @@ import {
   Facebook,
   Twitter,
 } from "lucide-react";
+
+const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy"));
+const TermsOfService = lazy(() => import("./pages/TermsOfService"));
+const GDPRCompliance = lazy(() => import("./pages/GDPRCompliance"));
+const CookiePolicy = lazy(() => import("./pages/CookiePolicy"));
 
 /* ─── Hook: animate elements on scroll ─── */
 function useInView(threshold = 0.15) {
@@ -132,29 +137,6 @@ const STATS = [
   { value: "40+", label: "Expert Consultants" },
 ];
 
-const TEAM = [
-  {
-    name: "Dr. Elena Munteanu",
-    role: "Managing Director",
-    bio: "20+ years in environmental policy and EIA. Former EU Commission adviser.",
-  },
-  {
-    name: "Andrei Vasilescu",
-    role: "Head of Compliance",
-    bio: "ISO 14001 lead auditor with extensive industrial compliance experience.",
-  },
-  {
-    name: "Maria Ionescu",
-    role: "Senior Ecologist",
-    bio: "Specialist in biodiversity assessment and Natura 2000 site management.",
-  },
-  {
-    name: "Cristian Radu",
-    role: "Sustainability Lead",
-    bio: "Expert in ESG strategy and CSRD reporting for multinational corporations.",
-  },
-];
-
 const PROJECTS = [
   {
     title: "Danube Industrial Park",
@@ -214,7 +196,6 @@ function Navbar() {
   const links = [
     "About",
     "Services",
-    "Team",
     "Projects",
     "Testimonials",
     "Contact",
@@ -255,6 +236,14 @@ function Navbar() {
                 {l}
               </a>
             ))}
+            <a
+              href="tel:+40754900900"
+              className="flex items-center gap-1.5 text-sm font-medium text-[hsl(215,25%,35%)] hover:text-[hsl(215,50%,23%)] transition-colors"
+              style={{ fontFamily: "'DM Sans', sans-serif" }}
+            >
+              <Phone className="w-3.5 h-3.5" />
+              +40 754 900 900
+            </a>
             <Button
               asChild
               size="sm"
@@ -378,7 +367,7 @@ function Hero() {
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="w-4 h-4 text-[hsl(152,35%,40%)]" />
-                  15+ Years
+                  Est. 2025
                 </div>
               </div>
             </FadeIn>
@@ -394,7 +383,7 @@ function Hero() {
                     { icon: Award, label: "Certified Excellence", val: "ISO 14001" },
                     { icon: BarChart3, label: "Projects Completed", val: "320+" },
                     { icon: Users, label: "Expert Team", val: "40+ Specialists" },
-                    { icon: Clock, label: "Years Active", val: "Since 2009" },
+                    { icon: Clock, label: "Established", val: "August 2025" },
                   ].map((item, i) => (
                     <div
                       key={i}
@@ -463,7 +452,7 @@ function About() {
                     className="text-lg font-semibold text-[hsl(215,50%,23%)]"
                     style={{ fontFamily: "'Playfair Display', serif" }}
                   >
-                    Trusted since 2009
+                    Trusted since 2025
                   </p>
                   <p className="text-sm text-[hsl(215,10%,45%)] max-w-xs mx-auto" style={{ fontFamily: "'DM Sans', sans-serif" }}>
                     Delivering measurable environmental outcomes across Central
@@ -487,8 +476,8 @@ function About() {
             </FadeIn>
             <FadeIn delay={0.1}>
               <p className="text-[hsl(215,10%,42%)] leading-relaxed mb-5" style={{ fontFamily: "'DM Sans', sans-serif" }}>
-                Founded in 2009, Verdalis has grown into one of the leading
-                environmental consulting firms in Central and Eastern Europe. Our
+                Founded in August 2025, Verdalis is a rising environmental
+                consulting firm in Central and Eastern Europe. Our
                 multidisciplinary team of ecologists, engineers, and policy
                 experts works at the intersection of science and regulation to
                 deliver practical, effective solutions.
@@ -573,74 +562,6 @@ function Services() {
                   </div>
                 </CardContent>
               </Card>
-            </FadeIn>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-}
-
-function Team() {
-  const initials = (name: string) =>
-    name
-      .split(" ")
-      .filter((_, i) => i === 0 || i === name.split(" ").length - 1)
-      .map((n) => n[0])
-      .join("");
-
-  return (
-    <section id="team" className="py-24 bg-white">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <FadeIn className="text-center mb-16">
-          <p className="text-xs font-semibold tracking-widest uppercase text-[hsl(152,35%,40%)] mb-3" style={{ fontFamily: "'DM Sans', sans-serif" }}>
-            Our People
-          </p>
-          <h2 className="text-3xl lg:text-4xl font-bold text-[hsl(215,50%,23%)] mb-4">
-            Led by Experts
-          </h2>
-          <p className="max-w-2xl mx-auto text-[hsl(215,10%,42%)]" style={{ fontFamily: "'DM Sans', sans-serif" }}>
-            Our leadership team combines deep scientific expertise with decades
-            of regulatory and industry experience.
-          </p>
-        </FadeIn>
-
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {TEAM.map((member, i) => (
-            <FadeIn key={i} delay={i * 0.1}>
-              <div className="text-center group">
-                <div className="w-28 h-28 rounded-full mx-auto mb-5 bg-gradient-to-br from-[hsl(215,50%,23%)]/10 to-[hsl(152,35%,40%)]/10 flex items-center justify-center border-2 border-[hsl(215,50%,23%)]/10 group-hover:border-[hsl(152,35%,40%)]/30 transition-colors">
-                  <span
-                    className="text-2xl font-semibold text-[hsl(215,50%,23%)]"
-                    style={{ fontFamily: "'Playfair Display', serif" }}
-                  >
-                    {initials(member.name)}
-                  </span>
-                </div>
-                <h3 className="text-lg font-semibold text-[hsl(215,50%,23%)] mb-1">
-                  {member.name}
-                </h3>
-                <p className="text-sm font-medium text-[hsl(152,35%,40%)] mb-3" style={{ fontFamily: "'DM Sans', sans-serif" }}>
-                  {member.role}
-                </p>
-                <p className="text-sm text-[hsl(215,10%,45%)] leading-relaxed" style={{ fontFamily: "'DM Sans', sans-serif" }}>
-                  {member.bio}
-                </p>
-                <div className="flex justify-center gap-3 mt-4">
-                  <a
-                    href="#"
-                    className="w-8 h-8 rounded-full bg-[hsl(215,50%,23%)]/5 flex items-center justify-center hover:bg-[hsl(215,50%,23%)]/15 transition-colors"
-                  >
-                    <Linkedin className="w-3.5 h-3.5 text-[hsl(215,50%,23%)]" />
-                  </a>
-                  <a
-                    href="#"
-                    className="w-8 h-8 rounded-full bg-[hsl(215,50%,23%)]/5 flex items-center justify-center hover:bg-[hsl(215,50%,23%)]/15 transition-colors"
-                  >
-                    <Mail className="w-3.5 h-3.5 text-[hsl(215,50%,23%)]" />
-                  </a>
-                </div>
-              </div>
             </FadeIn>
           ))}
         </div>
@@ -794,12 +715,14 @@ function Contact() {
                   {
                     icon: Phone,
                     label: "Phone",
-                    value: "+40 21 312 4567",
+                    value: "+40 754 900 900",
+                    href: "tel:+40754900900",
                   },
                   {
                     icon: Mail,
                     label: "Email",
                     value: "office@verdalis.eu",
+                    href: "mailto:office@verdalis.eu",
                   },
                   {
                     icon: Clock,
@@ -815,9 +738,15 @@ function Contact() {
                       <div className="text-xs font-medium text-[hsl(215,10%,50%)] mb-0.5" style={{ fontFamily: "'DM Sans', sans-serif" }}>
                         {item.label}
                       </div>
-                      <div className="text-sm text-[hsl(215,25%,20%)]" style={{ fontFamily: "'DM Sans', sans-serif" }}>
-                        {item.value}
-                      </div>
+                      {"href" in item && item.href ? (
+                        <a href={item.href} className="text-sm text-[hsl(215,25%,20%)] hover:text-[hsl(152,35%,40%)] transition-colors" style={{ fontFamily: "'DM Sans', sans-serif" }}>
+                          {item.value}
+                        </a>
+                      ) : (
+                        <div className="text-sm text-[hsl(215,25%,20%)]" style={{ fontFamily: "'DM Sans', sans-serif" }}>
+                          {item.value}
+                        </div>
+                      )}
                     </div>
                   </div>
                 ))}
@@ -993,10 +922,20 @@ function Footer() {
                 Verdalis
               </span>
             </div>
-            <p className="text-sm leading-relaxed mb-6" style={{ fontFamily: "'DM Sans', sans-serif" }}>
+            <p className="text-sm leading-relaxed mb-4" style={{ fontFamily: "'DM Sans', sans-serif" }}>
               Expert environmental consulting for businesses committed to
               sustainability and regulatory excellence.
             </p>
+            <div className="space-y-2 mb-6 text-sm" style={{ fontFamily: "'DM Sans', sans-serif" }}>
+              <a href="tel:+40754900900" className="flex items-center gap-2 hover:text-white transition-colors">
+                <Phone className="w-4 h-4" />
+                +40 754 900 900
+              </a>
+              <a href="mailto:office@verdalis.eu" className="flex items-center gap-2 hover:text-white transition-colors">
+                <Mail className="w-4 h-4" />
+                office@verdalis.eu
+              </a>
+            </div>
             <div className="flex gap-3">
               {[Linkedin, Facebook, Twitter].map((Icon, i) => (
                 <a
@@ -1034,7 +973,6 @@ function Footer() {
             <ul className="space-y-2.5 text-sm" style={{ fontFamily: "'DM Sans', sans-serif" }}>
               {[
                 ["About Us", "#about"],
-                ["Our Team", "#team"],
                 ["Projects", "#projects"],
                 ["Careers", "#"],
                 ["Contact", "#contact"],
@@ -1055,14 +993,13 @@ function Footer() {
             </h4>
             <ul className="space-y-2.5 text-sm" style={{ fontFamily: "'DM Sans', sans-serif" }}>
               {[
-                "Privacy Policy",
-                "Terms of Service",
-                "Cookie Policy",
-                "GDPR Compliance",
-                "Environmental Policy",
-              ].map((label) => (
+                ["Privacy Policy", "/privacy"],
+                ["Terms of Service", "/terms"],
+                ["Cookie Policy", "/cookies"],
+                ["GDPR Compliance", "/gdpr"],
+              ].map(([label, href]) => (
                 <li key={label}>
-                  <a href="#" className="hover:text-white transition-colors">
+                  <a href={href} className="hover:text-white transition-colors">
                     {label}
                   </a>
                 </li>
@@ -1076,7 +1013,7 @@ function Footer() {
         <div className="flex flex-col sm:flex-row justify-between items-center gap-4 text-xs" style={{ fontFamily: "'DM Sans', sans-serif" }}>
           <p>&copy; 2026 Verdalis Environmental Consulting. All rights reserved.</p>
           <p>
-            Registered in Romania &middot; CUI: RO12345678 &middot; J40/1234/2009
+            Registered in Romania &middot; CUI: RO12345678 &middot; J40/1234/2025
           </p>
         </div>
       </div>
@@ -1084,8 +1021,18 @@ function Footer() {
   );
 }
 
-/* ─── Main App ─── */
-export default function App() {
+/* ─── Simple Router ─── */
+function usePathname() {
+  const [pathname, setPathname] = useState(window.location.pathname);
+  useEffect(() => {
+    const onPopState = () => setPathname(window.location.pathname);
+    window.addEventListener("popstate", onPopState);
+    return () => window.removeEventListener("popstate", onPopState);
+  }, []);
+  return pathname;
+}
+
+function HomePage() {
   return (
     <div className="min-h-screen">
       <Navbar />
@@ -1093,11 +1040,32 @@ export default function App() {
       <StatsBar />
       <About />
       <Services />
-      <Team />
       <Projects />
       <Testimonials />
       <Contact />
       <Footer />
     </div>
   );
+}
+
+/* ─── Main App ─── */
+export default function App() {
+  const pathname = usePathname();
+
+  const page = (() => {
+    switch (pathname) {
+      case "/privacy":
+        return <PrivacyPolicy />;
+      case "/terms":
+        return <TermsOfService />;
+      case "/gdpr":
+        return <GDPRCompliance />;
+      case "/cookies":
+        return <CookiePolicy />;
+      default:
+        return <HomePage />;
+    }
+  })();
+
+  return <Suspense fallback={<div />}>{page}</Suspense>;
 }
