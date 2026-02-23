@@ -131,10 +131,10 @@ const SERVICES = [
 ];
 
 const STATS = [
-  { value: "15+", label: "Years of Experience" },
-  { value: "320+", label: "Projects Completed" },
+  { value: "25+", label: "Years of Industry Experience" },
   { value: "98%", label: "Client Satisfaction" },
   { value: "40+", label: "Expert Consultants" },
+  { value: "6", label: "Countries Served" },
 ];
 
 const PROJECTS = [
@@ -381,7 +381,7 @@ function Hero() {
                 <div className="w-full space-y-4">
                   {[
                     { icon: Award, label: "Certified Excellence", val: "ISO 14001" },
-                    { icon: BarChart3, label: "Projects Completed", val: "320+" },
+                    { icon: BarChart3, label: "Industry Experience", val: "25+ Years" },
                     { icon: Users, label: "Expert Team", val: "40+ Specialists" },
                     { icon: Clock, label: "Established", val: "August 2025" },
                   ].map((item, i) => (
@@ -455,8 +455,8 @@ function About() {
                     Trusted since 2025
                   </p>
                   <p className="text-sm text-[hsl(215,10%,45%)] max-w-xs mx-auto" style={{ fontFamily: "'DM Sans', sans-serif" }}>
-                    Delivering measurable environmental outcomes across Central
-                    and Eastern Europe.
+                    Delivering measurable environmental outcomes across
+                    the UK and Europe.
                   </p>
                 </div>
               </div>
@@ -476,8 +476,8 @@ function About() {
             </FadeIn>
             <FadeIn delay={0.1}>
               <p className="text-[hsl(215,10%,42%)] leading-relaxed mb-5" style={{ fontFamily: "'DM Sans', sans-serif" }}>
-                Founded in August 2025, Verdalis is a rising environmental
-                consulting firm in Central and Eastern Europe. Our
+                Backed by over 25 years of hands-on experience in environmental
+                projects, Verdalis is a trusted consulting firm. Our
                 multidisciplinary team of ecologists, engineers, and policy
                 experts works at the intersection of science and regulation to
                 deliver practical, effective solutions.
@@ -710,7 +710,7 @@ function Contact() {
                   {
                     icon: MapPin,
                     label: "Address",
-                    value: "47 Calea Victoriei, Bucharest 010063, Romania",
+                    value: "Dept 2, 43 Owston Road, Carcroft, Doncaster DN6 8DA",
                   },
                   {
                     icon: Phone,
@@ -889,7 +889,7 @@ function Contact() {
           <div className="mt-16 rounded-xl overflow-hidden border border-[hsl(215,15%,88%)] h-80">
             <iframe
               title="Verdalis Office Location"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2848.8444384555713!2d26.0964373!3d44.4416127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1ff4304e9a2a1%3A0x6c7f6de087a4e0e8!2sCalea%20Victoriei%2C%20Bucure%C8%99ti!5e0!3m2!1sen!2sro!4v1700000000000!5m2!1sen!2sro"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2370.0!2d-1.1815!3d53.5785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48790a0a0a0a0a0a%3A0x0!2sCarcroft%2C%20Doncaster!5e0!3m2!1sen!2suk!4v1700000000000!5m2!1sen!2suk"
               width="100%"
               height="100%"
               style={{ border: 0 }}
@@ -1011,9 +1011,9 @@ function Footer() {
         <Separator className="bg-white/10 mb-8" />
 
         <div className="flex flex-col sm:flex-row justify-between items-center gap-4 text-xs" style={{ fontFamily: "'DM Sans', sans-serif" }}>
-          <p>&copy; 2026 Verdalis Environmental Consulting. All rights reserved.</p>
+          <p>&copy; 2026 Verdalis Ltd. All rights reserved.</p>
           <p>
-            Registered in Romania &middot; CUI: RO12345678 &middot; J40/1234/2025
+            Registered in England and Wales &middot; Company No: 04542138
           </p>
         </div>
       </div>

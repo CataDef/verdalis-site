@@ -28,7 +28,7 @@ export default function GDPRCompliance() {
           <section>
             <h2 className="text-xl font-semibold text-[hsl(215,50%,23%)] mb-3">1. Our Commitment to GDPR</h2>
             <p className="text-[hsl(215,10%,42%)] leading-relaxed">
-              Verdalis Environmental Consulting S.R.L. is fully committed to complying with Regulation (EU) 2016/679 — the General Data Protection Regulation (GDPR). We have implemented comprehensive measures to ensure that all personal data processing activities are lawful, fair, and transparent.
+              Verdalis Ltd is fully committed to complying with the UK General Data Protection Regulation (UK GDPR) and the Data Protection Act 2018. We have implemented comprehensive measures to ensure that all personal data processing activities are lawful, fair, and transparent.
             </p>
           </section>
 
@@ -53,7 +53,7 @@ export default function GDPRCompliance() {
               <li><strong>Website contact forms:</strong> When you submit an inquiry through our website, we collect your name, email, phone number, company name, and message content.</li>
               <li><strong>Client relationships:</strong> When providing consulting services, we process client contact details and project-related information.</li>
               <li><strong>Website analytics:</strong> We may collect anonymized usage data to improve our website.</li>
-              <li><strong>Employment:</strong> We process applicant and employee data in accordance with Romanian labor law and GDPR.</li>
+              <li><strong>Employment:</strong> We process applicant and employee data in accordance with UK employment law and GDPR.</li>
             </ul>
           </section>
 
@@ -82,8 +82,8 @@ export default function GDPRCompliance() {
             <h2 className="text-xl font-semibold text-[hsl(215,50%,23%)] mb-3">5. How to Exercise Your Rights</h2>
             <p className="text-[hsl(215,10%,42%)] leading-relaxed">
               To exercise any of your GDPR rights, please contact our data protection team:<br /><br />
-              <strong>Verdalis Environmental Consulting S.R.L.</strong><br />
-              47 Calea Victoriei, Bucharest 010063, Romania<br />
+              <strong>Verdalis Ltd</strong><br />
+              Dept 2, 43 Owston Road, Carcroft, Doncaster DN6 8DA, England<br />
               Phone: <a href="tel:+40754900900" className="text-[hsl(152,35%,40%)] hover:underline">+40 754 900 900</a><br />
               Email: <a href="mailto:office@verdalis.eu" className="text-[hsl(152,35%,40%)] hover:underline">office@verdalis.eu</a><br /><br />
               We will respond to your request within 30 days. In complex cases, this period may be extended by an additional 60 days, in which case we will inform you of the extension.
@@ -93,7 +93,7 @@ export default function GDPRCompliance() {
           <section>
             <h2 className="text-xl font-semibold text-[hsl(215,50%,23%)] mb-3">6. Data Breach Notification</h2>
             <p className="text-[hsl(215,10%,42%)] leading-relaxed">
-              In the event of a personal data breach that is likely to result in a risk to the rights and freedoms of individuals, we will notify the Romanian National Supervisory Authority (ANSPDCP) within 72 hours of becoming aware of the breach. If the breach is likely to result in a high risk, we will also notify the affected individuals without undue delay.
+              In the event of a personal data breach that is likely to result in a risk to the rights and freedoms of individuals, we will notify the Information Commissioner's Office (ICO) within 72 hours of becoming aware of the breach. If the breach is likely to result in a high risk, we will also notify the affected individuals without undue delay.
             </p>
           </section>
 
@@ -108,9 +108,9 @@ export default function GDPRCompliance() {
             <h2 className="text-xl font-semibold text-[hsl(215,50%,23%)] mb-3">8. Supervisory Authority</h2>
             <p className="text-[hsl(215,10%,42%)] leading-relaxed">
               If you believe your data protection rights have been violated, you have the right to lodge a complaint with:<br /><br />
-              <strong>Autoritatea Nationala de Supraveghere a Prelucrarii Datelor cu Caracter Personal (ANSPDCP)</strong><br />
-              B-dul G-ral. Gheorghe Magheru 28-30, Sector 1, Bucharest, Romania<br />
-              Website: <span className="text-[hsl(152,35%,40%)]">www.dataprotection.ro</span>
+              <strong>Information Commissioner's Office (ICO)</strong><br />
+              Wycliffe House, Water Lane, Wilmslow, Cheshire SK9 5AF, United Kingdom<br />
+              Website: <span className="text-[hsl(152,35%,40%)]">www.ico.org.uk</span>
             </p>
           </section>
         </div>

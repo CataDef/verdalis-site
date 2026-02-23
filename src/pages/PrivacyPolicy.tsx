@@ -28,7 +28,7 @@ export default function PrivacyPolicy() {
           <section>
             <h2 className="text-xl font-semibold text-[hsl(215,50%,23%)] mb-3">1. Introduction</h2>
             <p className="text-[hsl(215,10%,42%)] leading-relaxed">
-              Verdalis Environmental Consulting ("Verdalis", "we", "us", or "our") is committed to protecting your personal data and respecting your privacy. This Privacy Policy explains how we collect, use, store, and protect your personal information when you visit our website or use our services.
+              Verdalis Ltd ("Verdalis", "we", "us", or "our") is committed to protecting your personal data and respecting your privacy. This Privacy Policy explains how we collect, use, store, and protect your personal information when you visit our website or use our services.
             </p>
           </section>
 
@@ -36,8 +36,9 @@ export default function PrivacyPolicy() {
             <h2 className="text-xl font-semibold text-[hsl(215,50%,23%)] mb-3">2. Data Controller</h2>
             <p className="text-[hsl(215,10%,42%)] leading-relaxed">
               The data controller responsible for your personal data is:<br />
-              <strong>Verdalis Environmental Consulting S.R.L.</strong><br />
-              47 Calea Victoriei, Bucharest 010063, Romania<br />
+              <strong>Verdalis Ltd</strong><br />
+              Dept 2, 43 Owston Road, Carcroft, Doncaster DN6 8DA, England<br />
+              Company No: 04542138<br />
               Managing Director: Razvan Alecu<br />
               Phone: <a href="tel:+40754900900" className="text-[hsl(152,35%,40%)] hover:underline">+40 754 900 900</a><br />
               Email: <a href="mailto:office@verdalis.eu" className="text-[hsl(152,35%,40%)] hover:underline">office@verdalis.eu</a>
@@ -75,7 +76,7 @@ export default function PrivacyPolicy() {
               <li><strong>Consent (Art. 6(1)(a)):</strong> When you voluntarily submit a contact form or subscribe to communications.</li>
               <li><strong>Contractual necessity (Art. 6(1)(b)):</strong> When processing is necessary for the performance of a contract or pre-contractual measures.</li>
               <li><strong>Legitimate interest (Art. 6(1)(f)):</strong> For website analytics and service improvement.</li>
-              <li><strong>Legal obligation (Art. 6(1)(c)):</strong> When we are required to process data to comply with Romanian or EU law.</li>
+              <li><strong>Legal obligation (Art. 6(1)(c)):</strong> When we are required to process data to comply with UK law or applicable regulations.</li>
             </ul>
           </section>
 
@@ -120,10 +121,10 @@ export default function PrivacyPolicy() {
           <section>
             <h2 className="text-xl font-semibold text-[hsl(215,50%,23%)] mb-3">10. Supervisory Authority</h2>
             <p className="text-[hsl(215,10%,42%)] leading-relaxed">
-              You have the right to lodge a complaint with the Romanian National Supervisory Authority for Personal Data Processing (ANSPDCP) if you believe your data protection rights have been violated:<br />
-              <strong>ANSPDCP</strong><br />
-              B-dul G-ral. Gheorghe Magheru 28-30, Sector 1, Bucharest, Romania<br />
-              Website: <span className="text-[hsl(152,35%,40%)]">www.dataprotection.ro</span>
+              You have the right to lodge a complaint with the UK Information Commissioner's Office (ICO) if you believe your data protection rights have been violated:<br />
+              <strong>Information Commissioner's Office</strong><br />
+              Wycliffe House, Water Lane, Wilmslow, Cheshire SK9 5AF, United Kingdom<br />
+              Website: <span className="text-[hsl(152,35%,40%)]">www.ico.org.uk</span>
             </p>
           </section>
 

@@ -28,7 +28,7 @@ export default function TermsOfService() {
           <section>
             <h2 className="text-xl font-semibold text-[hsl(215,50%,23%)] mb-3">1. General Information</h2>
             <p className="text-[hsl(215,10%,42%)] leading-relaxed">
-              These Terms of Service ("Terms") govern your use of the website operated by Verdalis Environmental Consulting S.R.L. ("Verdalis", "we", "us"), a company registered in Romania, with its registered office at 47 Calea Victoriei, Bucharest 010063, Romania. By accessing or using our website, you agree to be bound by these Terms.
+              These Terms of Service ("Terms") govern your use of the website operated by Verdalis Ltd ("Verdalis", "we", "us"), a company registered in England and Wales (Company No: 04542138), with its registered office at Dept 2, 43 Owston Road, Carcroft, Doncaster DN6 8DA. By accessing or using our website, you agree to be bound by these Terms.
             </p>
           </section>
 
@@ -53,7 +53,7 @@ export default function TermsOfService() {
           <section>
             <h2 className="text-xl font-semibold text-[hsl(215,50%,23%)] mb-3">4. Intellectual Property</h2>
             <p className="text-[hsl(215,10%,42%)] leading-relaxed">
-              All content on this website — including text, graphics, logos, images, and software — is the property of Verdalis Environmental Consulting S.R.L. or its licensors and is protected by Romanian and international copyright, trademark, and intellectual property laws. You may not reproduce, distribute, modify, or create derivative works from any content without our prior written consent.
+              All content on this website — including text, graphics, logos, images, and software — is the property of Verdalis Ltd or its licensors and is protected by UK and international copyright, trademark, and intellectual property laws. You may not reproduce, distribute, modify, or create derivative works from any content without our prior written consent.
             </p>
           </section>
 
@@ -67,7 +67,7 @@ export default function TermsOfService() {
           <section>
             <h2 className="text-xl font-semibold text-[hsl(215,50%,23%)] mb-3">6. Limitation of Liability</h2>
             <p className="text-[hsl(215,10%,42%)] leading-relaxed">
-              To the fullest extent permitted by Romanian law, Verdalis shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising out of or relating to your use of the website. Our total liability for any claim arising from the use of this website shall not exceed the amount paid by you, if any, for accessing the website.
+              To the fullest extent permitted by the laws of England and Wales, Verdalis shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising out of or relating to your use of the website. Our total liability for any claim arising from the use of this website shall not exceed the amount paid by you, if any, for accessing the website.
             </p>
           </section>
 
@@ -81,7 +81,7 @@ export default function TermsOfService() {
           <section>
             <h2 className="text-xl font-semibold text-[hsl(215,50%,23%)] mb-3">8. Governing Law</h2>
             <p className="text-[hsl(215,10%,42%)] leading-relaxed">
-              These Terms shall be governed by and construed in accordance with the laws of Romania. Any disputes arising from or in connection with these Terms shall be subject to the exclusive jurisdiction of the competent courts of Bucharest, Romania.
+              These Terms shall be governed by and construed in accordance with the laws of England and Wales. Any disputes arising from or in connection with these Terms shall be subject to the exclusive jurisdiction of the courts of England and Wales.
             </p>
           </section>
 
@@ -96,8 +96,8 @@ export default function TermsOfService() {
             <h2 className="text-xl font-semibold text-[hsl(215,50%,23%)] mb-3">10. Contact</h2>
             <p className="text-[hsl(215,10%,42%)] leading-relaxed">
               For questions about these Terms, please contact us at:<br />
-              <strong>Verdalis Environmental Consulting S.R.L.</strong><br />
-              47 Calea Victoriei, Bucharest 010063, Romania<br />
+              <strong>Verdalis Ltd</strong><br />
+              Dept 2, 43 Owston Road, Carcroft, Doncaster DN6 8DA, England<br />
               Phone: <a href="tel:+40754900900" className="text-[hsl(152,35%,40%)] hover:underline">+40 754 900 900</a><br />
               Email: <a href="mailto:office@verdalis.eu" className="text-[hsl(152,35%,40%)] hover:underline">office@verdalis.eu</a>
             </p>

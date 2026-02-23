@@ -35,7 +35,7 @@ export default function CookiePolicy() {
           <section>
             <h2 className="text-xl font-semibold text-[hsl(215,50%,23%)] mb-3">2. How We Use Cookies</h2>
             <p className="text-[hsl(215,10%,42%)] leading-relaxed">
-              Verdalis Environmental Consulting uses cookies and similar technologies on our website. We use cookies to ensure the website functions correctly, to improve your browsing experience, and to understand how visitors use our site.
+              Verdalis Ltd uses cookies and similar technologies on our website. We use cookies to ensure the website functions correctly, to improve your browsing experience, and to understand how visitors use our site.
             </p>
           </section>
 
@@ -108,7 +108,7 @@ export default function CookiePolicy() {
           <section>
             <h2 className="text-xl font-semibold text-[hsl(215,50%,23%)] mb-3">7. Legal Basis</h2>
             <p className="text-[hsl(215,10%,42%)] leading-relaxed">
-              Strictly necessary cookies are placed based on our legitimate interest in providing a functioning website (GDPR Art. 6(1)(f)). All other cookies are placed only with your explicit consent (GDPR Art. 6(1)(a)), in accordance with the EU ePrivacy Directive and Romanian Law no. 506/2004.
+              Strictly necessary cookies are placed based on our legitimate interest in providing a functioning website (UK GDPR Art. 6(1)(f)). All other cookies are placed only with your explicit consent (UK GDPR Art. 6(1)(a)), in accordance with the Privacy and Electronic Communications Regulations 2003 (PECR).
             </p>
           </section>
 
@@ -123,8 +123,8 @@ export default function CookiePolicy() {
             <h2 className="text-xl font-semibold text-[hsl(215,50%,23%)] mb-3">9. Contact</h2>
             <p className="text-[hsl(215,10%,42%)] leading-relaxed">
               If you have questions about our use of cookies, please contact us:<br /><br />
-              <strong>Verdalis Environmental Consulting S.R.L.</strong><br />
-              47 Calea Victoriei, Bucharest 010063, Romania<br />
+              <strong>Verdalis Ltd</strong><br />
+              Dept 2, 43 Owston Road, Carcroft, Doncaster DN6 8DA, England<br />
               Phone: <a href="tel:+40754900900" className="text-[hsl(152,35%,40%)] hover:underline">+40 754 900 900</a><br />
               Email: <a href="mailto:office@verdalis.eu" className="text-[hsl(152,35%,40%)] hover:underline">office@verdalis.eu</a>
             </p>
