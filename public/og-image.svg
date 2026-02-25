@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:hsl(215,50%,18%);stop-opacity:1" />
+      <stop offset="100%" style="stop-color:hsl(215,50%,28%);stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <!-- Subtle leaf watermark -->
+  <path d="M950 100c-20 55-55 95-110 125 35 7 70 3 97-14v165c0 8 6 14 14 14s14-6 14-14V211c28 16 63 20 97 14-55-30-90-70-112-125z" fill="white" opacity="0.04" transform="scale(1.5) translate(-350, -20)"/>
+  <!-- Leaf icon -->
+  <path d="M100 240c-6 16-16 28-32 36 10 2 20 1 28-4v48c0 2.4 1.6 4 4 4s4-1.6 4-4v-48c8 4.8 18 6 28 4-16-8-26-20-32-36z" fill="hsl(152,35%,50%)" transform="translate(0, 0) scale(1.8)"/>
+  <!-- Company name -->
+  <text x="100" y="340" font-family="Georgia, serif" font-size="72" font-weight="bold" fill="white">Verdalis Ltd</text>
+  <!-- Tagline -->
+  <text x="100" y="400" font-family="Arial, Helvetica, sans-serif" font-size="32" fill="hsl(152,35%,60%)">Environmental Consulting</text>
+  <!-- Description -->
+  <text x="100" y="465" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="rgba(255,255,255,0.7)">Expert environmental consulting services across the UK and Europe.</text>
+  <text x="100" y="498" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="rgba(255,255,255,0.7)">25+ years of industry experience in environmental projects.</text>
+  <!-- Bottom bar -->
+  <rect x="0" y="580" width="1200" height="50" fill="hsl(215,50%,14%)" />
+  <text x="100" y="612" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="rgba(255,255,255,0.5)">verdalis.uk</text>
+  <text x="1100" y="612" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="rgba(255,255,255,0.5)" text-anchor="end">Doncaster, UK</text>
+  <!-- Accent line -->
+  <rect x="100" y="420" width="80" height="3" rx="1.5" fill="hsl(152,35%,50%)" />
+</svg>
